@@ -6,7 +6,7 @@
     [
       "@semantic-release/npm",
       {
-        "npmPublish": true
+        "npmPublish": false
       }
     ],
     [
@@ -26,5 +26,5 @@
     }
   ],
   "type": "git",
-  "url": "git@github.com:QueroDelivery/qd-packages.git"
+  "url": "git@github.com:whitebeardit/whitebeard-standards.git"
 }

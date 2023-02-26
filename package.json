@@ -21,19 +21,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:whitebeard/standards.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@whitebeard"
+    "url": "git@github.com:whitebeardit/whitebeard-standards.git"
   },
   "keywords": [],
   "author": "Jennysson Junior",
   "contributors": "Almerindo Rehem",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whitebeard/standards/issues"
+    "url": "https://github.com/whitebeardit/whitebeard-standards/issues"
   },
-  "homepage": "https://github.com/whitebeard/standards#readme",
+  "homepage": "https://github.com/whitebeardit/whitebeard-standards#readme",
   "files": [
     "lib/**/*"
   ],

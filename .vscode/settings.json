@@ -21,7 +21,6 @@
   "editor.rulers": [80, 120],
   "eslint.validate": ["javascript", "typepscript"],
   "cSpell.words": [
-    "UNCAUGHTEXCEPTION",
     "customizer",
     "customizers",
     "datacache",
@@ -31,6 +30,9 @@
     "Middlewares",
     "openapi",
     "rabbitmq",
-    "sasl"
+    "sasl",
+    "UNCAUGHTEXCEPTION",
+    "whitebeard",
+    "whitebeardit"
   ]
 }
