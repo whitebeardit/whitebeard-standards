@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: whitebeard-standards
+  description: Package with some standards used and shared between a several services
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: library
+  lifecycle: production
+  owner: group:staff-backend

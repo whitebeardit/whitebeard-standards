@@ -1,0 +1,36 @@
+{
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.rulers": [80, 120],
+  "eslint.validate": ["javascript", "typepscript"],
+  "cSpell.words": [
+    "UNCAUGHTEXCEPTION",
+    "customizer",
+    "customizers",
+    "datacache",
+    "kafkajs",
+    "kafkaparams",
+    "KEYPREFIX",
+    "Middlewares",
+    "openapi",
+    "rabbitmq",
+    "sasl"
+  ]
+}
