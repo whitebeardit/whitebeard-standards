@@ -66,11 +66,10 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "@apidevtools/json-schema-ref-parser": "^10.1.0",
     "amqplib": "^0.8.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
-    "express-openapi-validator": "^4.13.4",
+    "express-openapi-validator": "^5.0.2",
     "ioredis": "^4.28.2",
     "js-yaml": "^4.1.0",
     "kafkajs": "^2.0.1",
