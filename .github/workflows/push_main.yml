@@ -11,7 +11,7 @@ jobs:
     continue-on-error: false
     strategy:
       matrix:
-        node-version: [14.17]
+        node-version: [16.14.0]
 
     steps:
       - name: Checkout
