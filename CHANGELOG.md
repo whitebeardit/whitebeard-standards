@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.0.0...v1.1.0) (2023-02-27)
+
+
+### Features
+
+* add all exporters ([73f9524](https://github.com/whitebeardit/whitebeard-standards/commit/73f952477d7e8b2540de79ea7b81aa1c11a158da))
+
 # 1.0.0 (2023-02-27)
 
 
