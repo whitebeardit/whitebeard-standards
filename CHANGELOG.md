@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.1.0...v1.2.0) (2023-02-27)
+
+
+### Features
+
+* add getEmpityValues into helpers ([2b70469](https://github.com/whitebeardit/whitebeard-standards/commit/2b704696bd3cf17c75fc1c2d221f42038b0ca37e))
+* increase the node version ([e0f2b13](https://github.com/whitebeardit/whitebeard-standards/commit/e0f2b13c00ccafe5169ea6595a722aa3ee62d95b))
+
 # [1.1.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.0.0...v1.1.0) (2023-02-27)
 
 
