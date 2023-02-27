@@ -49,6 +49,6 @@ jobs:
       - name: Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_CI }}
+          GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
         run: |
           yarn release
