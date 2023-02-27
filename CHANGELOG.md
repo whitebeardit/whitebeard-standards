@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.2.0...v1.3.0) (2023-02-27)
+
+
+### Features
+
+* fix openai-validator ([7ff91bf](https://github.com/whitebeardit/whitebeard-standards/commit/7ff91bf1b61dedee33f99cfdff6f408cac3e6d86))
+
 # [1.2.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.1.0...v1.2.0) (2023-02-27)
 
 
