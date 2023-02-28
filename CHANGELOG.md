@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.8.0...v1.9.0) (2023-02-28)
+
+
+### Features
+
+* changing the ci/cd ([d5bcffa](https://github.com/whitebeardit/whitebeard-standards/commit/d5bcffaf0d924c13946383725f0dee4e4f1b11d2))
+
 # [1.8.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.7.0...v1.8.0) (2023-02-28)
 
 
