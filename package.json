@@ -24,8 +24,7 @@
     "url": "git+ssh://git@github.com/whitebeardit/whitebeard-standards.git"
   },
   "keywords": [],
-  "author": "Jennysson Junior",
-  "contributors": "Almerindo Rehem",
+  "author": "Almerindo Rehem",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/whitebeardit/whitebeard-standards/issues"
@@ -80,9 +79,12 @@
     "traceability": "^3.1.1"
   },
   "engines": {
-    "node": ">14.17.0"
+    "node": ">16.0.0"
   },
   "directories": {
     "lib": "lib"
+  },
+  "publishConfig": {
+    "@whitebeardit:registry": "https://npm.pkg.github.com"
   }
 }
