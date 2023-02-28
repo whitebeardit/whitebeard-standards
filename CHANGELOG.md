@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.9.1...v1.10.0) (2023-02-28)
+
+
+### Features
+
+* package 01 ([a52ec85](https://github.com/whitebeardit/whitebeard-standards/commit/a52ec850daabc0e2a48d0c85ac008840c532776c))
+
 ## [1.9.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.9.0...v1.9.1) (2023-02-28)
 
 
