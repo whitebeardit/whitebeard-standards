@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:whitebeardit/whitebeard-standards.git"
+    "url": "git+ssh://git@github.com/whitebeardit/whitebeard-standards.git"
   },
   "keywords": [],
   "author": "Jennysson Junior",
@@ -81,5 +81,11 @@
   },
   "engines": {
     "node": ">14.17.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "publishConfig": {
+   "@whitebeard:registry": "https://npm.pkg.github.com"
+ }
 }
