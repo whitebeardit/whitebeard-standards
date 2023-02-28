@@ -84,4 +84,4 @@ jobs:
           yarn build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
