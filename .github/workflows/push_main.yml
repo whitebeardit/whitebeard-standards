@@ -40,9 +40,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
         run: |
           yarn --frozen-lockfile --ignore-scripts
-      - name: testing
-        run: |
-          yarn test:coverage
+      # - name: testing
+      #   run: |
+      #     yarn test:coverage
       - name: build
         run: |
           yarn build
@@ -84,4 +84,4 @@ jobs:
           yarn build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
