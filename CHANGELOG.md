@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.9.0...v1.9.1) (2023-02-28)
+
+
+### Bug Fixes
+
+* changing the ci/cd - add scope ([bb40b50](https://github.com/whitebeardit/whitebeard-standards/commit/bb40b5092ba5217c1e24141aae208476aa1f64b8))
+
 # [1.9.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.8.0...v1.9.0) (2023-02-28)
 
 
