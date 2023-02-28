@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.4.0...v1.5.0) (2023-02-28)
+
+
+### Features
+
+* add a publisher to gh packager 2 ([cd46ffc](https://github.com/whitebeardit/whitebeard-standards/commit/cd46ffcee92908ee13ed1ec3ef80e843daa7b958))
+* add a publisher to gh packager 3 ([6356ef1](https://github.com/whitebeardit/whitebeard-standards/commit/6356ef1b67fbdc0a26b9368f6057ea5f8effbac4))
+* add a publisher to gh packager 4 ([622c92b](https://github.com/whitebeardit/whitebeard-standards/commit/622c92b3a9fa48d290384b3468aa473be97c55f9))
+
 # [1.4.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.3.0...v1.4.0) (2023-02-28)
 
 
