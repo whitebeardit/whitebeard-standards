@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.5.0...v1.6.0) (2023-02-28)
+
+
+### Features
+
+* add a new package token ([2aa5353](https://github.com/whitebeardit/whitebeard-standards/commit/2aa5353f719afc0e83cce8f5b9b83f66fee87690))
+
 # [1.5.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.4.0...v1.5.0) (2023-02-28)
 
 
