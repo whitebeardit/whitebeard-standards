@@ -8,6 +8,9 @@ jobs:
   setup:
     name: preparing
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     continue-on-error: false
     strategy:
       matrix:
@@ -24,6 +27,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          registry-url: https://npm.pkg.github.com/
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -51,37 +55,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
         run: |
           yarn release
-
-  publish-gpr:
-    needs: setup
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://npm.pkg.github.com/
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v1
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - name: install packages using yarn.lock
-        env:
-          GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
-        run: |
-          yarn --frozen-lockfile --ignore-scripts
-      - name: build
-        run: |
-          yarn build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
