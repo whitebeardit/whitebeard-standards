@@ -1,6 +1,6 @@
 {
   "name": "@whitebeard/standards",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A standards of uses in to services at Whitebeard Company",
   "main": "./lib/index.js",
   "scripts": {
@@ -86,6 +86,6 @@
     "lib": "lib"
   },
   "publishConfig": {
-   "@whitebeard:registry": "https://npm.pkg.github.com"
- }
+    "@whitebeard:registry": "https://npm.pkg.github.com"
+  }
 }
