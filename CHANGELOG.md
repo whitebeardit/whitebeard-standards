@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.14.0...v1.15.0) (2023-03-11)
+
+
+### Features
+
+* add utils gitconfiglocal ([7d9c734](https://github.com/whitebeardit/whitebeard-standards/commit/7d9c734139aa3b6ae15e9f8b0b20e464adc77335))
+
 # [1.14.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.13.0...v1.14.0) (2023-02-28)
 
 
