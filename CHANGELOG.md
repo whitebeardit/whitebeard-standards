@@ -1,3 +1,16 @@
+# [1.17.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.16.1...v1.17.0) (2023-03-11)
+
+
+### Bug Fixes
+
+* add tests ([dc13be1](https://github.com/whitebeardit/whitebeard-standards/commit/dc13be174bee6987300a9889b21814b629cd2127))
+
+
+### Features
+
+* add semantic-release config ([5964d38](https://github.com/whitebeardit/whitebeard-standards/commit/5964d380e6246912e0dbda0afc94d23859cfe355))
+* change root dir ([c3411fb](https://github.com/whitebeardit/whitebeard-standards/commit/c3411fb83530ec822ef08c69238c2f343bfea588))
+
 ## [1.16.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.16.0...v1.16.1) (2023-03-11)
 
 
