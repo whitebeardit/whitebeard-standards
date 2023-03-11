@@ -10,7 +10,7 @@ const setup = async () => {
   const gitRemoteUrl = await gitRemoteOriginUrl();
   console.log(`gitRemoteUrl=${gitRemoteUrl}`);
 
-  config = {
+  const config = {
     plugins: [
       '@semantic-release/commit-analyzer',
       '@semantic-release/release-notes-generator',

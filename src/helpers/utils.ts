@@ -54,9 +54,8 @@ export const decreaseAttributesLengthFromObject = (
   return objectTransformed;
 };
 
-const pGitconfig = promisify(gitconfig);
-
 export const gitRemoteOriginUrl = async () => {
+  const pGitconfig = promisify(gitconfig);
   const cwd = process.cwd();
   const remoteName = 'origin';
   const config = await pGitconfig(cwd);
