@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.16.0...v1.16.1) (2023-03-11)
+
+
+### Bug Fixes
+
+* add utils gitconfiglocal ([6c2e618](https://github.com/whitebeardit/whitebeard-standards/commit/6c2e6187df126e2872a4414af46f40f139cf8152))
+
 # [1.16.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.15.0...v1.16.0) (2023-03-11)
 
 
