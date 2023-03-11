@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.18.0...v1.19.0) (2023-03-11)
+
+
+### Features
+
+* add eslint config ([087c5f6](https://github.com/whitebeardit/whitebeard-standards/commit/087c5f64e3d92f603cd0fcd4fadbbe1661e4af7b))
+
 # [1.18.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.17.1...v1.18.0) (2023-03-11)
 
 
