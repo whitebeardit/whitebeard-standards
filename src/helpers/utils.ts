@@ -56,10 +56,9 @@ export const decreaseAttributesLengthFromObject = (
 
 const pGitconfig = promisify(gitconfig);
 
-export async function gitRemoteOriginUrl({
-  cwd = process.cwd(),
-  remoteName = 'origin',
-} = {}) {
+export const gitRemoteOriginUrl = async () => {
+  const cwd = process.cwd();
+  const remoteName = 'origin';
   const config = await pGitconfig(cwd);
   const url =
     config.remote && config.remote[remoteName] && config.remote[remoteName].url;
@@ -69,4 +68,4 @@ export async function gitRemoteOriginUrl({
   }
 
   return url;
-}
+};
