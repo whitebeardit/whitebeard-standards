@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.17.0...v1.17.1) (2023-03-11)
+
+
+### Bug Fixes
+
+* console.log of GITHUB_REMOTE_URL ([7366b62](https://github.com/whitebeardit/whitebeard-standards/commit/7366b620cf2a2967c794f9b7e9acfdde778f9f46))
+
 # [1.17.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.16.1...v1.17.0) (2023-03-11)
 
 
