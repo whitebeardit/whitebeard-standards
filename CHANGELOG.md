@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.13.0...v1.14.0) (2023-02-28)
+
+
+### Features
+
+* creating .npmrc in CI12 ([6a179fd](https://github.com/whitebeardit/whitebeard-standards/commit/6a179fd7b4f9cccb9b22a51e6cbc4c6544037098))
+
 # [1.13.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.12.0...v1.13.0) (2023-02-28)
 
 
