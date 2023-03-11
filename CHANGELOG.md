@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.17.1...v1.18.0) (2023-03-11)
+
+
+### Features
+
+* add prettier config ([e7f81ed](https://github.com/whitebeardit/whitebeard-standards/commit/e7f81edc6b5eccc8dcd1497f6452820286c93d12))
+
 ## [1.17.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.17.0...v1.17.1) (2023-03-11)
 
 
