@@ -4,7 +4,7 @@ const setup = () => {
 
   console.log(`Configuring the changelog semantic-release to branch ${branch}`);
   console.log(`GITHUB_REF_NAME=${branch}`);
-  console.log(`gitRemoteUrl=${gitRemoteUrl}`);
+  console.log(`GITHUB_REMOTE_URL=${gitRemoteUrl}`);
 
   const config = {
     plugins: [
