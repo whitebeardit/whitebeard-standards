@@ -19,10 +19,7 @@
     "prepare": "yarn lint ; yarn build",
     "release": "yarn run semantic-release"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/whitebeardit/whitebeard-standards.git"
-  },
+  "repository": "git@github.com:whitebeardit/whitebeard-standards.git",
   "keywords": [],
   "author": "Almerindo Rehem",
   "license": "MIT",
@@ -69,6 +66,7 @@
     "amqplib": "^0.8.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express-openapi-validator": "^5.0.2",
     "gitconfiglocal": "^2.1.0",
     "ioredis": "^4.28.2",

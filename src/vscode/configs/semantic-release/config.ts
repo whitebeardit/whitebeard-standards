@@ -1,13 +1,9 @@
-import { gitRemoteOriginUrl } from '../../../helpers';
-require('dotenv').config();
-
-const setup = async () => {
+const setup = () => {
   const branch = process.env.GITHUB_REF_NAME;
+  const gitRemoteUrl = process.env.GITHUB_REMOTE_URL;
 
   console.log(`Configuring the changelog semantic-release to branch ${branch}`);
-  console.log(`GITHUB_REF_NAME=${process.env.GITHUB_REF_NAME}`);
-
-  const gitRemoteUrl = await gitRemoteOriginUrl();
+  console.log(`GITHUB_REF_NAME=${branch}`);
   console.log(`gitRemoteUrl=${gitRemoteUrl}`);
 
   const config = {
@@ -49,7 +45,7 @@ const setup = async () => {
     url: gitRemoteUrl,
   };
 
-  module.exports = config;
+  return config;
 };
 
-setup();
+export default setup();
