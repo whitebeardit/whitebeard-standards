@@ -44,9 +44,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
         run: |
           yarn --frozen-lockfile --ignore-scripts
-      # - name: testing
-      #   run: |
-      #     yarn test:coverage
+      - name: testing
+        run: |
+          yarn test:coverage
       - name: build
         run: |
           yarn build
