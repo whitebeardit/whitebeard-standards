@@ -19,7 +19,10 @@
     "declaration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["jest", "node"]
+    "allowJs": true,
+    "types": ["jest", "node"],
+    "skipLibCheck": true
+
     // "baseUrl": "./"
   },
   "include": ["src/**/*"],

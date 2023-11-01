@@ -29,6 +29,7 @@
     "kafkaparams",
     "KEYPREFIX",
     "Middlewares",
+    "openai",
     "openapi",
     "rabbitmq",
     "sasl",
