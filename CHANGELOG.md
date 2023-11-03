@@ -1,3 +1,14 @@
+## [1.19.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.0...v1.19.1) (2023-11-03)
+
+
+### Bug Fixes
+
+* add nes standards ([60e4908](https://github.com/whitebeardit/whitebeard-standards/commit/60e4908ae1c79ad159ccb76417d450af6e75a360))
+* remove warnings ([382d561](https://github.com/whitebeardit/whitebeard-standards/commit/382d56123033e2da21f941129d2d3b1694af7454))
+* remove warnings ([5ed0131](https://github.com/whitebeardit/whitebeard-standards/commit/5ed013197eb0e50d9016b02678cf4be1bd893db3))
+* remove warnings ([3edce70](https://github.com/whitebeardit/whitebeard-standards/commit/3edce70711e6baa85de99d3e05926cff819cbbf6))
+* remove warnings ([1a4c4db](https://github.com/whitebeardit/whitebeard-standards/commit/1a4c4dbc755dea64afa62b7c2c04e9c1cac654d4))
+
 # [1.19.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.18.0...v1.19.0) (2023-03-11)
 
 
