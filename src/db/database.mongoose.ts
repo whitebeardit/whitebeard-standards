@@ -24,6 +24,7 @@ export class MongooseDatabase implements IDatabase {
 
   public async start() {
     if (!this.DB_CONNECTION) {
+      mongoose.set('strictQuery', false);
       await mongoose.connect(this.DB_URI, {
         dbName: this.DB_NAME,
       });
