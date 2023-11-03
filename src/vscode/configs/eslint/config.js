@@ -14,7 +14,7 @@ const mainRules = {
   'import/prefer-default-export': 'off',
 };
 
-const config = {
+module.exports = {
   env: {
     es6: true,
     node: true,
@@ -127,5 +127,3 @@ const config = {
     ],
   },
 };
-
-export default config;

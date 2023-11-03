@@ -22,7 +22,7 @@ export const validatorMiddleware: any = (fileDestination: string) =>
     apiSpec: fileDestination,
     validateRequests: true,
     validateResponses: true,
-    validateFormats: 'full',
+    // validateFormats: 'full',
   });
 
 export * from './cache.middleware';
