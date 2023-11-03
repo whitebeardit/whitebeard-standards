@@ -1,5 +1,9 @@
 import * as loadDocumentSyncModule from '../../middlewares/loadDocumentsSync';
-import { swaggerAppCustomizer, validationAppCustomizer, validatorMiddleware } from '../../middlewares';
+import {
+  swaggerAppCustomizer,
+  validationAppCustomizer,
+  validatorMiddleware,
+} from '../../middlewares';
 import * as OpenApiValidator from 'express-openapi-validator';
 
 jest.mock('express-openapi-validator');
@@ -38,7 +42,6 @@ describe('Middlewares', () => {
       validatorMiddleware('PATH_TO_FILE');
       expect(openAPIValidatorMiddlewareSpy).toHaveBeenCalledWith({
         apiSpec: 'PATH_TO_FILE',
-        validateFormats: 'full',
         validateRequests: true,
         validateResponses: true,
       });
