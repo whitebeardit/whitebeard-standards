@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.1...v1.20.0) (2024-02-05)
+
+
+### Features
+
+* add mongo-binary cache ([4eb42d1](https://github.com/whitebeardit/whitebeard-standards/commit/4eb42d1535bb3c8b9f49f66026cc1e6dddf23212))
+
 ## [1.19.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.0...v1.19.1) (2023-11-03)
 
 
