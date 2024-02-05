@@ -37,5 +37,10 @@
     "UNCAUGHTEXCEPTION",
     "whitebeard",
     "whitebeardit"
-  ]
+  ],
+  "[javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
 }

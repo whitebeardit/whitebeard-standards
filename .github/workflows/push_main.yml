@@ -39,6 +39,14 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      - name: Load MongoDB binary cache
+        id: cache-mongodb-binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mongodb-binaries
+          key: ${{ matrix.node-version }}
+
       - name: install packages using yarn.lock
         env:
           GITHUB_TOKEN: ${{ secrets.WB_GH_TOKEN_CI }}
