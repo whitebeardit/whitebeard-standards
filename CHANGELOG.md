@@ -1,3 +1,17 @@
+# [2.1.0](https://github.com/whitebeardit/whitebeard-standards/compare/v2.0.1...v2.1.0) (2024-02-17)
+
+
+### Bug Fixes
+
+* change secrets ([892d43f](https://github.com/whitebeardit/whitebeard-standards/commit/892d43f20982fb73327fd258514b212c314c3841))
+* ci ([52dc22d](https://github.com/whitebeardit/whitebeard-standards/commit/52dc22d3cee4de6309d6967ea997eb1e83aca02c))
+* update node version ([20fe5ac](https://github.com/whitebeardit/whitebeard-standards/commit/20fe5ac70d7752d3018bd6e83cda853a6325ae9f))
+
+
+### Features
+
+* add eslint config ([4ccd74d](https://github.com/whitebeardit/whitebeard-standards/commit/4ccd74d2500aa4430c4489674e548451c7627328))
+
 ## [2.0.1](https://github.com/whitebeardit/whitebeard-standards/compare/v2.0.0...v2.0.1) (2024-02-17)
 
 
