@@ -1,8 +1,5 @@
 import 'kafkajs';
-import {
-  KafkaProducerFactory,
-  KafkaConnectionProducerSingleton,
-} from '../../../messaging/kafka';
+import { KafkaProducerFactory } from '../../../messaging/kafka';
 import { KafkaProducer } from '../../../messaging/kafka/producer/kafkaProducer';
 import { ICreateKafkaParams } from '../../../messaging/messaging.interface';
 
@@ -25,9 +22,10 @@ describe('KafkaProducerFactory tests', () => {
       allowAutoTopicCreation: false,
       transactionTimeout: 30000,
     };
-    const kafkaInstance =
-      KafkaConnectionProducerSingleton.getKafkaInstance(mockKafkaParams);
-    kafkaProducer = new KafkaProducer(kafkaInstance, defaultConfigProducer);
+    kafkaProducer = KafkaProducer.getInstance(
+      mockKafkaParams,
+      defaultConfigProducer,
+    );
   });
   afterAll(async () => {
     if (kafkaProducer) {
@@ -36,10 +34,7 @@ describe('KafkaProducerFactory tests', () => {
   });
 
   it('should create a instance of KafkaProducer', async () => {
-    const getKafkaInstanceSpy = jest.spyOn(
-      KafkaConnectionProducerSingleton,
-      'getKafkaInstance',
-    );
+    const getKafkaInstanceSpy = jest.spyOn(KafkaProducer, 'getInstance');
     const kafkaProducer = KafkaProducerFactory.create(mockKafkaParams);
 
     expect(getKafkaInstanceSpy).toBeCalled();

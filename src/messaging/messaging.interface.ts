@@ -25,6 +25,7 @@ export interface IParamsConsumeKafka {
 
 export interface IConsumer {
   consume(paramsConsumerKafka: IParamsConsumeKafka): Promise<void>;
+  shutdown(): Promise<void>;
 }
 
 export interface IParamsProduce {

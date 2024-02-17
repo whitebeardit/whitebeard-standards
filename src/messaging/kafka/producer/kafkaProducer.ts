@@ -1,20 +1,59 @@
-import { IHeaders, Kafka, Producer, ProducerConfig } from 'kafkajs';
+import { IHeaders, Kafka, Producer, ProducerConfig, logLevel } from 'kafkajs';
 import { ContextAsyncHooks, Logger } from 'traceability';
 import {
+  ICreateKafkaParams,
   IParamsProduce,
   IParamsProduceMultipleMessages,
   IProducer,
 } from '../../messaging.interface';
-const { randomUUID } = require('crypto');
+import { randomUUID } from 'crypto';
+import { createLoggerKafkaJs } from '../kafka.helpers';
 
 export class KafkaProducer implements IProducer {
-  private producer?: Producer;
+  private static instance: KafkaProducer | null = null;
+
+  private readonly producer?: Producer;
 
   constructor(
-    private readonly kafkaInstance: Kafka,
+    {
+      logLevel: levelLogging,
+      serviceName,
+      brokers,
+      password,
+      username,
+    }: ICreateKafkaParams,
     private readonly producerConfig: ProducerConfig,
   ) {
-    this.start();
+    const kafkaInstance = new Kafka({
+      logLevel: levelLogging || logLevel.ERROR,
+      clientId: serviceName,
+      brokers,
+      ssl: true,
+      logCreator: createLoggerKafkaJs,
+      sasl: {
+        mechanism: 'plain',
+        password,
+        username,
+      },
+      retry: {
+        initialRetryTime: 100,
+        retries: 10,
+      },
+      connectionTimeout: 45000,
+    });
+    this.producer = kafkaInstance.producer(this.producerConfig);
+    this.registerListener();
+    this.producer?.connect();
+  }
+
+  public static getInstance(
+    params: ICreateKafkaParams,
+    config: ProducerConfig,
+  ): KafkaProducer {
+    if (!KafkaProducer.instance) {
+      KafkaProducer.instance = new KafkaProducer(params, config);
+    }
+    return KafkaProducer.instance;
   }
 
   async produce({
@@ -85,12 +124,6 @@ export class KafkaProducer implements IProducer {
       key,
       value: JSON.stringify(value),
     }));
-  }
-
-  public async start(): Promise<void> {
-    this.producer = this.kafkaInstance.producer(this.producerConfig);
-    await this.producer?.connect();
-    this.registerListener();
   }
 
   public async shutdown(): Promise<void> {

@@ -1,6 +1,5 @@
 import { ProducerConfig } from 'kafkajs';
 import { ICreateKafkaParams } from '../../messaging.interface';
-import { KafkaConnectionProducerSingleton } from './kafkaConnectionProducerSingleton';
 
 import { KafkaProducer } from './kafkaProducer';
 
@@ -9,18 +8,16 @@ export class KafkaProducerFactory {
     kafkaparams: ICreateKafkaParams,
     producerConfig?: ProducerConfig,
   ) {
-    const kafkaInstance =
-      KafkaConnectionProducerSingleton.getKafkaInstance(kafkaparams);
-
-    const defaultConfigProducer = {
+    const defaultConfigProducer: ProducerConfig = {
       allowAutoTopicCreation: false,
       transactionTimeout: 30000,
       retry: {
-        retries: 3,
+        retries: 10,
+        initialRetryTime: 110,
       },
     };
 
-    return new KafkaProducer(kafkaInstance, {
+    return KafkaProducer.getInstance(kafkaparams, {
       ...defaultConfigProducer,
       ...producerConfig,
     });

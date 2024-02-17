@@ -1,11 +1,9 @@
+import { IController, IDatabase, IDatacache } from './../index';
 import express, { Application, RequestHandler } from 'express';
 import { ContextAsyncHooks, Logger } from 'traceability';
 import { IMessagingRabbitMq } from '../messaging';
 import { Server } from 'http';
 import cors from 'cors';
-import { IDatabase } from '../db';
-import { IDatacache } from '../cache';
-import { IController } from '../controllers';
 
 class App {
   public app: Application;
@@ -14,9 +12,9 @@ class App {
 
   public apiSpecLocation: string;
 
-  private readonly database: IDatabase;
+  private readonly database?: IDatabase;
 
-  private readonly newRelic: any;
+  private readonly newRelic?: any;
 
   private readonly datacache?: IDatacache;
 
@@ -25,20 +23,37 @@ class App {
   private readonly timeoutMilliseconds?: number;
 
   private readonly middleWaresToStart = [
-    express.json(),
-    express.urlencoded({ extended: true }),
+    express.json({ limit: '10mb' }),
+    express.urlencoded({ limit: '10mb', extended: true }),
     ContextAsyncHooks.getExpressMiddlewareTracking(),
-    cors({
-      origin: 'https://services.rehem.dev',
-    }),
   ];
+
+  private buildCorsOptions(
+    originAllowed?: string[],
+    corsWithCredentials?: boolean,
+  ) {
+    const corsOptions = {
+      origin: [
+        'https://dev-portal.services.quero.io',
+        ...(originAllowed || []),
+      ],
+    };
+    if (corsWithCredentials) {
+      return { ...corsOptions, credentials: true };
+    }
+
+    return corsOptions;
+  }
 
   constructor(appInit: {
     port: number;
+    originAllowed?: string[];
+    corsWithCredentials?: boolean;
     middleWares: Array<RequestHandler>;
+    middlewaresToStart?: Array<RequestHandler>;
     controllersBeforeMiddlewares?: Array<IController>;
     controllers: Array<IController>;
-    database: IDatabase;
+    database?: IDatabase;
     apiSpecLocation: string;
     newRelic?: any;
     datacache?: IDatacache;
@@ -48,6 +63,17 @@ class App {
     >;
     timeoutMilliseconds?: number;
   }) {
+    this.middleWaresToStart.push(
+      cors(
+        this.buildCorsOptions(
+          appInit.originAllowed,
+          appInit.corsWithCredentials,
+        ),
+      ),
+    );
+    if (appInit.middlewaresToStart) {
+      this.middleWaresToStart.push(...appInit.middlewaresToStart);
+    }
     this.app = express();
     this.port = appInit.port;
     this.newRelic = appInit.newRelic;
@@ -89,7 +115,7 @@ class App {
   }
 
   public async databaseSetup() {
-    await this.database.start();
+    await this.database?.start();
   }
 
   public getDatabaseInstance() {
@@ -97,7 +123,7 @@ class App {
   }
 
   public async closeDatabase() {
-    await this.database.close();
+    await this.database?.close();
   }
 
   public async messagingSetup() {
