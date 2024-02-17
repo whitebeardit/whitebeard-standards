@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/whitebeardit/whitebeard-standards/compare/v2.3.0...v2.3.1) (2024-02-17)
+
+
+### Bug Fixes
+
+* decreasing node version ([8e0869f](https://github.com/whitebeardit/whitebeard-standards/commit/8e0869f1316d30221e921596305031d00dec776e))
+
 # [2.3.0](https://github.com/whitebeardit/whitebeard-standards/compare/v2.2.0...v2.3.0) (2024-02-17)
 
 
