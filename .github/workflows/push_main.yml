@@ -49,8 +49,9 @@ jobs:
 
       - name: install packages using yarn.lock
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_CI }}
+          GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN_CI }}" >>  .npmrc
           yarn --frozen-lockfile --ignore-scripts
       - name: testing
         run: |
@@ -63,7 +64,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_CI }}
         run: |
           yarn release
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN_CI }}" >>  .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN_CI }}
