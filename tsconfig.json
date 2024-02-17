@@ -25,6 +25,6 @@
 
     // "baseUrl": "./"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/__test__/*"]
+  "include": ["src/**/*", "jest.config.ts", "jest.setup.redis-mock.ts"],
+  "exclude": ["node_modules", "**/__test__/*", "lib"]
 }
