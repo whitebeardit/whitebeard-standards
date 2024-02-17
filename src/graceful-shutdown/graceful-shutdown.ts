@@ -7,6 +7,8 @@ import {
   ProcessEventsGracefulShutdownEnum,
 } from './interfaces/graceful-shutdown.interface';
 
+/* eslint-disable no-prototype-builtins */
+
 export class GracefulShutdownManager {
   private connections: ISocketsMap = {};
 

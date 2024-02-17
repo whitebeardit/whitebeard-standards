@@ -101,5 +101,9 @@
       "**/jest/**/*.*",
       "**/__test__/**/*.*"
     ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
