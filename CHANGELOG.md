@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/whitebeardit/whitebeard-standards/compare/v2.0.0...v2.0.1) (2024-02-17)
+
+
+### Bug Fixes
+
+* revert ([1e2dfb9](https://github.com/whitebeardit/whitebeard-standards/commit/1e2dfb91a9332a28369dc0150b0df1a53c338bda))
+
 # [2.0.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.1...v2.0.0) (2024-02-17)
 
 
