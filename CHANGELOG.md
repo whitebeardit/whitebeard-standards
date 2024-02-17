@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/whitebeardit/whitebeard-standards/compare/v2.1.2...v2.2.0) (2024-02-17)
+
+
+### Features
+
+* add IConfigApp interface ([aafaad5](https://github.com/whitebeardit/whitebeard-standards/commit/aafaad5313128b441fb8a1e6a7931254eea97ad7))
+
 ## [2.1.2](https://github.com/whitebeardit/whitebeard-standards/compare/v2.1.1...v2.1.2) (2024-02-17)
 
 
