@@ -5,6 +5,25 @@ import { IMessagingRabbitMq } from '../messaging';
 import { Server } from 'http';
 import cors from 'cors';
 
+export interface IConfigApp {
+  port: number;
+  originAllowed?: string[];
+  corsWithCredentials?: boolean;
+  middleWares: Array<RequestHandler>;
+  middlewaresToStart?: Array<RequestHandler>;
+  controllersBeforeMiddlewares?: Array<IController>;
+  controllers: Array<IController>;
+  database?: IDatabase;
+  apiSpecLocation: string;
+  newRelic?: any;
+  datacache?: IDatacache;
+  messaging?: IMessagingRabbitMq;
+  customizers: Array<
+    (application: Application, fileDestination: string) => void
+  >;
+  timeoutMilliseconds?: number;
+}
+
 class App {
   public app: Application;
 
@@ -45,24 +64,7 @@ class App {
     return corsOptions;
   }
 
-  constructor(appInit: {
-    port: number;
-    originAllowed?: string[];
-    corsWithCredentials?: boolean;
-    middleWares: Array<RequestHandler>;
-    middlewaresToStart?: Array<RequestHandler>;
-    controllersBeforeMiddlewares?: Array<IController>;
-    controllers: Array<IController>;
-    database?: IDatabase;
-    apiSpecLocation: string;
-    newRelic?: any;
-    datacache?: IDatacache;
-    messaging?: IMessagingRabbitMq;
-    customizers: Array<
-      (application: Application, fileDestination: string) => void
-    >;
-    timeoutMilliseconds?: number;
-  }) {
+  constructor(appInit: IConfigApp) {
     this.middleWaresToStart.push(
       cors(
         this.buildCorsOptions(
