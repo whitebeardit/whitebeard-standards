@@ -86,7 +86,7 @@
     "traceability": "^3.1.1"
   },
   "engines": {
-    "node": ">16.0.0"
+    "node": ">20.0.0"
   },
   "directories": {
     "lib": "lib"
