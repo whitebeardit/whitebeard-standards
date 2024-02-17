@@ -3904,7 +3904,7 @@ eslint-plugin-import@^2.25.3:
     minimatch "^3.1.2"
     semver "^7.5.4"
 
-eslint-plugin-jest@^27.2.3:
+eslint-plugin-jest@^27.2.3, eslint-plugin-jest@^27.9.0:
   version "27.9.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.9.0.tgz#7c98a33605e1d8b8442ace092b60e9919730000b"
   integrity sha512-QIT7FH7fNmd9n4se7FFKHbsLKGQiw885Ds6Y/sxKgCZ6natwCsXdgPOADnYVxN2QrRweF0FZWbJ6S7Rsn7llug==
@@ -4098,7 +4098,7 @@ express-openapi-validator@^5.0.3:
     ono "^7.1.3"
     path-to-regexp "^6.2.0"
 
-express@^4.17.1:
+express@^4.17.1, express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==
