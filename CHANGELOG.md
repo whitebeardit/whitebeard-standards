@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/whitebeardit/whitebeard-standards/compare/v2.1.0...v2.1.1) (2024-02-17)
+
+
+### Bug Fixes
+
+* eslint config ([151d0f4](https://github.com/whitebeardit/whitebeard-standards/commit/151d0f4b12cf51ef65d59eaa266aebc7b711b1cb))
+* eslint config ([6faa5c2](https://github.com/whitebeardit/whitebeard-standards/commit/6faa5c2e6b649b9bc3926a471202af33a8299f01))
+* eslint config ([01deefd](https://github.com/whitebeardit/whitebeard-standards/commit/01deefd788d44f09afb380211cd5a26892e82417))
+
 # [2.1.0](https://github.com/whitebeardit/whitebeard-standards/compare/v2.0.1...v2.1.0) (2024-02-17)
 
 
