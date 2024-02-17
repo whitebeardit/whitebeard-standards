@@ -1,6 +1,6 @@
 {
   "name": "@whitebeardit/whitebeard-standards",
-  "version": "1.19.1",
+  "version": "2.0.0",
   "description": "A standards of uses in to services at Whitebeard Company",
   "main": "./lib/index.js",
   "scripts": {

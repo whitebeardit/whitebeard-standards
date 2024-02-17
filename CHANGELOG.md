@@ -1,3 +1,23 @@
+# [2.0.0](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.1...v2.0.0) (2024-02-17)
+
+
+### Bug Fixes
+
+* reducing the coverage ([c3fb4f8](https://github.com/whitebeardit/whitebeard-standards/commit/c3fb4f8ae2984dc1e8588314085fa6a918d2a35f))
+
+
+### Features
+
+* add mongo-binary cache ([4eb42d1](https://github.com/whitebeardit/whitebeard-standards/commit/4eb42d1535bb3c8b9f49f66026cc1e6dddf23212))
+* add producers, features, gracefullShutdown ([ff13420](https://github.com/whitebeardit/whitebeard-standards/commit/ff134200160e83c441ee6bc7f0259bd795c79b7e))
+
+
+### BREAKING CHANGES
+
+* This commit has some braking change
+
+add producers, modify the servers and removes prettier and eslint
+
 ## [1.19.1](https://github.com/whitebeardit/whitebeard-standards/compare/v1.19.0...v1.19.1) (2023-11-03)
 
 
